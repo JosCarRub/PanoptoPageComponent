@@ -91,7 +91,7 @@ class UploadVideoGUI {
         global $DIC;
         $renderer = $DIC->ui()->renderer();
         $this->tpl->addOnLoadCode('setLenguage("'.$this->pl->txt('video').'", "'.$this->pl->txt('max_video_width').'");');
-        $this->tpl->addCss($this->pl->getDirectory() . '/templates/default/manage.css');
+        $this->tpl->addCss("./Customizing/global/plugins/Services/COPage/PageComponent/PanoptoPageComponent/templates/default/manage.css");
 
         try {
             if(!$this->properties){
